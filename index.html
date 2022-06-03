@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Easybank landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav container">
+      <img src="./images/icon-hamburger.svg" alt="" class="open" />
+      <div>
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="menu" role="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact </a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <button class="menu">Request Invite</button>
+    </div>
+    <div class="banner" role="banner">
+      <div>
+        <h1>Next generation digital banking</h1>
+        <p>
+          Take your financial life online. Your Easybank account will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much
+          more.
+        </p>
+        <button>Request Invite</button>
+      </div>
+      <img src="./images/image-mockups.png" alt="" />
+    </div>
+    <div class="why-us" role="main">
+      <div>
+        <h2>Why choose Easybank?</h2>
+        <p>
+          We leverage Open Banking to turn your bank account into your financial
+          hub. Control your finances like never before.
+        </p>
+      </div>
+      <div class="tips">
+        <div>
+          <img src="./images/icon-online.svg" alt="" />
+          <h3>Online Banking</h3>
+          <p>
+            Our modern web and mobile applications allow you to keep track of
+            your finances wherever you are in the world.
+          </p>
+        </div>
+        <div>
+          <img src="./images/icon-budgeting.svg" alt="" />
+          <h3>Simple Budgeting</h3>
+          <p>
+            See exactly where your money goes each month. Receive notifications
+            when you’re close to hitting your limits.
+          </p>
+        </div>
+        <div>
+          <img src="./images/icon-onboarding.svg" alt="" />
+          <h3>Fast Onboarding</h3>
+          <p>
+            We don’t do branches. Open your account in minutes online and start
+            taking control of your finances right away.
+          </p>
+        </div>
+        <div>
+          <img src="./images/icon-api.svg" alt="" />
+          <h3>Open API</h3>
+          <p>
+            Manage your savings, investments, pension, and much more from one
+            account. Tracking your money has never been easier.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="articles">
+      <h2>Latest Articles</h2>
+      <div class="article">
+        <div>
+          <img src="./images/image-currency.jpg" alt="" />
+          <div>
+            <p class="author">By Claire Robinson</p>
+            <h3 class="title">Receive money in any currency with no fees</h3>
+            <p class="content">
+              The world is getting smaller and we’re becoming more mobile. So
+              why should you be forced to only receive money in a single …
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./images/image-restaurant.jpg" alt="" />
+          <div>
+            <p class="author">By Wilson Hutton</p>
+            <h3 class="title">Treat yourself without worrying about money</h3>
+            <p class="content">
+              Our simple budgeting feature allows you to separate out your
+              spending and set realistic limits each month. That means you …
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./images/image-plane.jpg" alt="" />
+          <div>
+            <p class="author">By Wilson Hutton</p>
+            <h3 class="title">Take your Easybank card wherever you go</h3>
+            <p class="content">
+              We want you to enjoy your travels. This is why we don’t charge any
+              fees on purchases while you’re abroad. We’ll even show you …
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./images/image-confetti.jpg" alt="" />
+          <div>
+            <p class="author">By Claire Robinson</p>
+            <h3 class="title">Our invite-only Beta accounts are now live!</h3>
+            <p class="content">
+              After a lot of hard work by the whole team, we’re excited to
+              launch our closed beta. It’s easy to request an invite through the
+              site ...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <img src="./images/logo.svg" class="footer-logo" /><br />
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="./images/icon-youtube.svg" alt="" />
+        <img src="./images/icon-twitter.svg" alt="" />
+        <img src="./images/icon-pinterest.svg" alt="" />
+        <img src="./images/icon-instagram.svg" alt="" />
+      </div>
+      <div>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </div>
+      <div>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </div>
+      <div class="copyright">
+        <button>Request Invite</button>
+        <p>&copy; EasyBank, All Rights Reserved.</p>
+      </div>
+    </div>
+    <div class="attribution" role="contentinfo">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">The Face</a>.
+    </div>
+    <script>
+      const open = document.querySelector(".open");
+      open.addEventListener("click", () => {
+        if ((open.src = "./images/icon-open.svg")) {
+          document.querySelector(".menu").style.display = "block";
+          document.querySelector("button.menu").style.display = "block";
+          open.setAttribute("src", "./images/icon-close.svg");
+        } else {
+          document.querySelector(".menu").style.display = "none";
+          document.querySelector("button.menu").style.display = "none";
+          open.setAttribute("src", "./images/icon-open.svg");
+        }
+      });
+    </script>
+  </body>
+</html>
