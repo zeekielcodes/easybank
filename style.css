@@ -31,7 +31,7 @@ body {
   margin: 10px;
 }
 
-.menu {
+.nav ul {
   display: block;
 }
 
@@ -52,6 +52,7 @@ body {
   background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   color: hsl(0, 0%, 100%);
   font-size: 14px;
+  margin: 0;
 }
 
 .banner {
@@ -60,6 +61,7 @@ body {
   background: hsl(0, 0%, 98%);
   height: 600px;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .banner div {
@@ -72,8 +74,11 @@ body {
   padding: 80px;
 }
 
+.images {
+  background: url("./images/bg-intro-desktop.svg");
+}
 .banner img {
-  width: 50%;
+  width: 100%;
 
   height: fit-content;
 }
@@ -126,6 +131,15 @@ button:hover {
   font-size: 14px;
   color: hsl(233, 26%, 24%);
   line-height: 1.6;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .tips {
@@ -221,13 +235,13 @@ button:hover {
   list-style: none;
 }
 
-.footer div a {
+.footer ul a {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
   font-weight: 300;
 }
 
-.footer div a:hover {
+.footer ul a:hover {
   color: hsl(136, 65%, 51%);
 }
 
@@ -316,7 +330,8 @@ button:hover {
     align-items: center; */
   }
 
-  .footer div {
+  .footer div,
+  .footer ul {
     margin-top: 5px;
     width: 100%;
     text-align: center;
@@ -357,12 +372,12 @@ button:hover {
     position: relative; */
   }
 
-  .menu {
+  ul.menu {
     display: none;
     height: 350px;
     width: 100%;
     text-align: center;
-    transition: 1.5s ease-in;
+
     padding: 30px;
     box-sizing: border-box;
   }
@@ -375,5 +390,10 @@ button:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .images {
+    /* background: unset; */
+    background: url("./images/bg-intro-mobile.svg");
   }
 }

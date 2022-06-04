@@ -13,35 +13,22 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Easybank landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <div class="nav container">
+    <nav class="nav container">
       <div class="imgs">
-        <img src="./images/logo.svg" alt="" />
-        <img src="./images/icon-hamburger.svg" class="open" />
+        <img src="./images/logo.svg" alt="Easy Bank" />
+        <img src="./images/icon-hamburger.svg" alt="open" class="open" />
       </div>
-      <div class="menu" role="navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact </a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
+      <ul class="menu" role="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact </a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
       <button>Request Invite</button>
-    </div>
+    </nav>
     <div class="banner" role="banner">
       <div>
         <h1>Next generation digital banking</h1>
@@ -52,7 +39,9 @@
         </p>
         <button>Request Invite</button>
       </div>
-      <img src="./images/image-mockups.png" alt="" />
+      <div class="images">
+        <img src="./images/image-mockups.png" alt="Hero" />
+      </div>
     </div>
     <div class="why-us" role="main">
       <div>
@@ -64,7 +53,7 @@
       </div>
       <div class="tips">
         <div>
-          <img src="./images/icon-online.svg" alt="" />
+          <img src="./images/icon-online.svg" alt="Online Banking" />
           <h3>Online Banking</h3>
           <p>
             Our modern web and mobile applications allow you to keep track of
@@ -72,7 +61,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/icon-budgeting.svg" alt="" />
+          <img src="./images/icon-budgeting.svg" alt="Simple Budgeting" />
           <h3>Simple Budgeting</h3>
           <p>
             See exactly where your money goes each month. Receive notifications
@@ -80,7 +69,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/icon-onboarding.svg" alt="" />
+          <img src="./images/icon-onboarding.svg" alt="Fast Onboarding" />
           <h3>Fast Onboarding</h3>
           <p>
             We don’t do branches. Open your account in minutes online and start
@@ -88,7 +77,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/icon-api.svg" alt="" />
+          <img src="./images/icon-api.svg" alt="Open API" />
           <h3>Open API</h3>
           <p>
             Manage your savings, investments, pension, and much more from one
@@ -101,7 +90,7 @@
       <h2>Latest Articles</h2>
       <div class="article">
         <div>
-          <img src="./images/image-currency.jpg" alt="" />
+          <img src="./images/image-currency.jpg" alt="Cash" />
           <div>
             <p class="author">By Claire Robinson</p>
             <h3 class="title">Receive money in any currency with no fees</h3>
@@ -112,7 +101,7 @@
           </div>
         </div>
         <div>
-          <img src="./images/image-restaurant.jpg" alt="" />
+          <img src="./images/image-restaurant.jpg" alt="Restaurant" />
           <div>
             <p class="author">By Wilson Hutton</p>
             <h3 class="title">Treat yourself without worrying about money</h3>
@@ -123,7 +112,7 @@
           </div>
         </div>
         <div>
-          <img src="./images/image-plane.jpg" alt="" />
+          <img src="./images/image-plane.jpg" alt="Airplane" />
           <div>
             <p class="author">By Wilson Hutton</p>
             <h3 class="title">Take your Easybank card wherever you go</h3>
@@ -134,7 +123,7 @@
           </div>
         </div>
         <div>
-          <img src="./images/image-confetti.jpg" alt="" />
+          <img src="./images/image-confetti.jpg" alt="Live now" />
           <div>
             <p class="author">By Claire Robinson</p>
             <h3 class="title">Our invite-only Beta accounts are now live!</h3>
@@ -170,22 +159,22 @@
           </g>
         </svg>
         <br />
-        <img src="./images/icon-facebook.svg" alt="" />
-        <img src="./images/icon-youtube.svg" alt="" />
-        <img src="./images/icon-twitter.svg" alt="" />
-        <img src="./images/icon-pinterest.svg" alt="" />
-        <img src="./images/icon-instagram.svg" alt="" />
+        <img src="./images/icon-facebook.svg" alt="facebook" />
+        <img src="./images/icon-youtube.svg" alt="youtube" />
+        <img src="./images/icon-twitter.svg" alt="twitter" />
+        <img src="./images/icon-pinterest.svg" alt="pinterest" />
+        <img src="./images/icon-instagram.svg" alt="instagram" />
       </div>
-      <div>
+      <ul>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Blog</a></li>
-      </div>
-      <div>
+      </ul>
+      <ul>
         <li><a href="#">Careers</a></li>
         <li><a href="#">Support</a></li>
         <li><a href="#">Privacy Policy</a></li>
-      </div>
+      </ul>
       <div class="copyright">
         <button>Request Invite</button>
         <p>&copy; EasyBank, All Rights Reserved.</p>
@@ -199,13 +188,13 @@
     </div>
     <script>
       const open = document.querySelector(".open");
-      const nav = document.querySelector(".menu");
+      const navbar = document.querySelector(".menu");
       document.querySelector(".open").addEventListener("click", () => {
-        nav.style.display === "none"
-          ? (nav.style.display = "block")(
+        navbar.style.display === "none"
+          ? (navbar.style.display = "block")(
               open.setAttribute("src", "./images/icon-close.svg")
             )
-          : (nav.style.display = "none")(
+          : (navbar.style.display = "none")(
               open.setAttribute("src", "./images/icon-hamburger.svg")
             );
       });
