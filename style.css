@@ -31,6 +31,10 @@ body {
   margin: 10px;
 }
 
+.menu {
+  display: block;
+}
+
 .nav ul li a {
   text-decoration: none;
   color: hsl(233, 8%, 62%);
@@ -347,20 +351,27 @@ button:hover {
   }
   .open {
     display: block;
-    right: 0;
+    /* right: 0;
     top: 0;
     align-self: flex-end;
+    position: relative; */
   }
 
   .menu {
     display: none;
     height: 350px;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     transition: 1.5s ease-in;
   }
 
   .nav button {
     display: none;
+  }
+
+  .imgs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }

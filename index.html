@@ -27,9 +27,9 @@
   </head>
   <body>
     <div class="nav container">
-      <img src="./images/icon-hamburger.svg" alt="" class="open" />
-      <div>
+      <div class="imgs">
         <img src="./images/logo.svg" alt="" />
+        <img src="./images/icon-hamburger.svg" class="open" />
       </div>
       <div class="menu" role="navigation">
         <ul>
@@ -199,16 +199,15 @@
     </div>
     <script>
       const open = document.querySelector(".open");
-      open.addEventListener("click", () => {
-        if ((open.src = "./images/icon-open.svg")) {
-          document.querySelector(".menu").style.display = "block";
-
-          open.setAttribute("src", "./images/icon-close.svg");
-        } else {
-          document.querySelector(".menu").style.display = "none";
-
-          open.setAttribute("src", "./images/icon-open.svg");
-        }
+      const nav = document.querySelector(".menu");
+      document.querySelector(".open").addEventListener("click", () => {
+        nav.style.display === "none"
+          ? (nav.style.display = "block")(
+              open.setAttribute("src", "./images/icon-close.svg")
+            )
+          : (nav.style.display = "none")(
+              open.setAttribute("src", "./images/icon-hamburger.svg")
+            );
       });
     </script>
   </body>
