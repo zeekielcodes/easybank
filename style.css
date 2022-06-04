@@ -61,7 +61,7 @@ body {
   background: hsl(0, 0%, 98%);
   height: 600px;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: ; */
 }
 
 .banner div {
@@ -76,11 +76,13 @@ body {
 
 .images {
   background: url("./images/bg-intro-desktop.svg");
+  overflow-x: hidden;
+  padding: unset;
 }
-.banner img {
-  width: 100%;
-
-  height: fit-content;
+.images img {
+  width: 150%;
+  /* overflow-y: ;
+  height: ; */
 }
 
 h1 {
@@ -275,6 +277,10 @@ button:hover {
     padding: 40px;
   }
 
+  .container {
+    padding-left: 30px;
+  }
+
   .article div,
   .tips div {
     width: 40vw;
@@ -286,7 +292,6 @@ button:hover {
 }
 
 @media (max-width: 640px) {
-  .banner,
   .articles,
   .why-us,
   .footer {
@@ -298,15 +303,16 @@ button:hover {
   }
 
   .banner div {
-    padding: unset;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     text-align: center;
+    line-height: 1.4;
   }
 
-  .banner img {
-    width: 100vw;
-    object-fit: unset;
+  .images img {
+    width: 150%;
+    /* height: ;
+    object-fit: ; */
     overflow: hidden;
   }
 
@@ -364,12 +370,19 @@ button:hover {
     text-decoration: underline;
     transition: 1s ease-in;
   }
-  .open {
+
+  img.open {
     display: block;
+    height: 30px;
+    width: 30px;
     /* right: 0;
     top: 0;
     align-self: flex-end;
     position: relative; */
+  }
+
+  .logo {
+    height: fit-content;
   }
 
   ul.menu {
@@ -395,5 +408,6 @@ button:hover {
   .images {
     /* background: unset; */
     background: url("./images/bg-intro-mobile.svg");
+    padding-bottom: 0;
   }
 }
