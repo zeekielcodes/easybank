@@ -237,7 +237,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.footer-logo {
+.footer svg {
   margin-bottom: 30px;
 }
 
@@ -282,6 +282,8 @@ button:hover {
   .banner div {
     padding: unset;
     width: 100vw;
+    align-items: center;
+    text-align: center;
   }
 
   .banner img {
@@ -301,6 +303,7 @@ button:hover {
 
   .why-us {
     padding: 30px;
+    text-align: center;
   }
 
   .footer {
@@ -310,7 +313,7 @@ button:hover {
   }
 
   .footer div {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 100%;
     text-align: center;
   }
@@ -328,9 +331,20 @@ button:hover {
 
   .nav ul li {
     display: block;
+    margin: 20px 0;
     transition: 1.5s ease-in;
   }
 
+  .nav ul li:hover {
+    border-bottom: unset;
+    font-weight: 700;
+  }
+
+  .nav ul li a:hover {
+    color: hsl(136, 65%, 51%);
+    text-decoration: underline;
+    transition: 1s ease-in;
+  }
   .open {
     display: block;
     right: 0;
@@ -340,6 +354,13 @@ button:hover {
 
   .menu {
     display: none;
+    height: 350px;
+    width: 100vw;
+    text-align: center;
     transition: 1.5s ease-in;
+  }
+
+  .nav button {
+    display: none;
   }
 }
