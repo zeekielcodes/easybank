@@ -190,8 +190,8 @@
       const open = document.querySelector(".open");
       const navbar = document.querySelector(".menu");
       document.querySelector(".open").addEventListener("click", () => {
-        navbar.style.width === "0"
-          ? (navbar.style.width = "100%")(
+        navbar.style.display === "none"
+          ? (navbar.style.display = "block")(
               open.setAttribute("src", "./images/icon-close.svg")
             )
           : (navbar.style.display = "none")(
