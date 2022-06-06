@@ -15,12 +15,12 @@
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
-    <nav class="nav container">
+    <nav class="nav container" role="navigation">
       <div class="imgs">
         <img src="./images/logo.svg" alt="Easy Bank" class="logo" />
         <img src="./images/icon-hamburger.svg" alt="open" class="open" />
       </div>
-      <ul class="menu" role="navigation">
+      <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact </a></li>
@@ -190,8 +190,8 @@
       const open = document.querySelector(".open");
       const navbar = document.querySelector(".menu");
       document.querySelector(".open").addEventListener("click", () => {
-        navbar.style.display === "none"
-          ? (navbar.style.display = "block")(
+        navbar.style.width === "0"
+          ? (navbar.style.width = "100%")(
               open.setAttribute("src", "./images/icon-close.svg")
             )
           : (navbar.style.display = "none")(

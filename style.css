@@ -61,7 +61,6 @@ body {
   background: hsl(0, 0%, 98%);
   height: 600px;
   justify-content: space-between;
-  /* overflow: ; */
 }
 
 .banner div {
@@ -76,11 +75,15 @@ body {
 
 .images {
   background: url("./images/bg-intro-desktop.svg");
-  overflow-x: hidden;
-  padding: unset;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
 }
 .images img {
   width: 150%;
+  /* overflow: hidden; */
+  /* object-fit: contain; */
+
   /* overflow-y: ;
   height: ; */
 }
@@ -304,6 +307,8 @@ button:hover {
 
   .banner div {
     width: 100%;
+    padding: 20px;
+
     align-items: center;
     text-align: center;
     line-height: 1.4;
@@ -311,9 +316,6 @@ button:hover {
 
   .images img {
     width: 150%;
-    /* height: ;
-    object-fit: ; */
-    overflow: hidden;
   }
 
   .article div,
@@ -373,7 +375,7 @@ button:hover {
 
   img.open {
     display: block;
-    height: 30px;
+    height: 25px;
     width: 30px;
     /* right: 0;
     top: 0;
@@ -408,6 +410,7 @@ button:hover {
   .images {
     /* background: unset; */
     background: url("./images/bg-intro-mobile.svg");
-    padding-bottom: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 }
